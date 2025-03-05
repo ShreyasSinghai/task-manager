@@ -1,0 +1,12 @@
+.task-item {
+    padding: 5px 0;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  span:last-child {
+    margin-left: 10px;
+  }

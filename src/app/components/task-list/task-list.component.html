@@ -1,0 +1,5 @@
+<app-task-form></app-task-form>
+<div *ngFor="let task of tasks$ | async">
+  <app-task-item [task]="task" (toggle)="toggleTask($event)"></app-task-item>
+</div>
+<a routerLink="/stats">View Statistics</a>

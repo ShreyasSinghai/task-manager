@@ -1,0 +1,7 @@
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <input formControlName="title" placeholder="Add task" />
+  <div *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched">
+    Title is required
+  </div>
+  <button type="submit" [disabled]="taskForm.invalid">Add</button>
+</form>

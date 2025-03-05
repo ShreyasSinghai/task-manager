@@ -1,0 +1,10 @@
+<div class="task-item" [ngClass]="{ completed: task.completed }">
+  <input
+    type="checkbox"
+    [checked]="task.completed"
+    (change)="toggle.emit(task.id)"
+  />
+  <span>{{ task.title }}</span>
+
+  <span>{{ task.createdAt | timeAgo }}</span>
+</div>

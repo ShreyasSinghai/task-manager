@@ -1,0 +1,6 @@
+<h2>Task Statistics</h2>
+<p *ngIf="stats$ | async as stats">
+  Total: {{ stats.total }} | Completed: {{ stats.completed }}
+</p>
+<a routerLink="/">Back to Tasks</a>
+<!-- Add this link -->
